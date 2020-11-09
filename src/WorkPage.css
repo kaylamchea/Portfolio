@@ -1,0 +1,65 @@
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.intro-name {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.intro-desc {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.Typewriter {
+    display: inline;
+    color: #5b64e1;
+}
+
+.intro p {
+    margin: 0;
+}
+
+.down-arrow {
+    width: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+.AnyClassForContainer {
+    position: fixed;
+    right: -100px;
+    bottom: 40px;
+    transition: right 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.AnyClassForContainer img {
+    width: 2rem;
+}
+
+.AnyClassForTransition {
+    right: 20px;
+}
+
+.case-study {
+    padding-bottom: 8rem;
+}
+
+#case-studies {
+    padding-top: 8rem;
+}

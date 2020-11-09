@@ -1,0 +1,24 @@
+.row img {
+    width: 90%;
+    margin: auto;    
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    padding-top: 4rem;
+}
+
+.fun-desc{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 0rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+.row img {
+    padding-bottom: 0;
+};
+}

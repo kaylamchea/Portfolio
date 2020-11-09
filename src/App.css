@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://use.typekit.net/szq2avc.css"');
+
+
+/* General styles */
+body {
+    font-family: 'Karla','aktiv-grotesk', 'Nunito Sans', sans-serif;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #303131;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation */
+.headroom--pinned, .headroom--unpinned {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav,
+.navbar-brand {
+    font-size: 1.2em;
 }
 
-.App-link {
-  color: #61dafb;
+.sticky-top {
+    padding-top: 3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-nav a {
+    display: block;
+    margin-left: 1.5rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+nav a.active {
+    color: #5b64e1;
+    border-bottom: 1px solid #5b64e1;
+    padding-bottom: 3px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #5b64e1;
+}
+
+.navbar {
+    padding: 2rem 0rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: rgba(0, 0, 0, .5);
+    font-size: .9rem;
+}
+
+footer span {
+    color: black;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.socials img {
+    width: 3.1rem;
+    height: auto;
+    padding: 0 .7rem;
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        width: 60%;
+    }
+
+    .headroom--pinned, .headroom--unpinned {
+        width: 60%;
+    }
 }
