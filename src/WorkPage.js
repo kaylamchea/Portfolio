@@ -24,7 +24,7 @@ function WorkPage() {
                 <ScrollIntoView selector="#case-studies"><input type="image" className="down-arrow" src="https://www.flaticon.com/svg/static/icons/svg/130/130907.svg" alt="Down arrow"/></ScrollIntoView>
             </div>
             <div id="case-studies">
-                <CaseStudy name="Nexus Builders" category="UI/UX DESIGN" time="9-MONTHS" desc="Designing a platform that empowers college students to gain real-life experience through side-projects." linkText="Read more" img="/img/ex.png" url="/work/nexus-builders"></CaseStudy>
+                <CaseStudy name="Nexus Builders" category="UX Design/Research" time="Winter 2019" desc="Empowering students to gain hands-on experience with a project search platform." linkText="Read more" img="/img/Nexus-1.png" url="/work/nexus-builders"></CaseStudy>
                 <CaseStudy name="Nexus Builders" category="UI/UX DESIGN" time="9-MONTHS" desc="Designing a platform that empowers college students to gain real-life experience through side-projects." linkText="Read more" img="/img/ex.png" url="/work/nexus-builders"></CaseStudy>
                 <CaseStudy name="Nexus Builders" category="UI/UX DESIGN" time="9-MONTHS" desc="Designing a platform that empowers college students to gain real-life experience through side-projects." linkText="Read more" img="/img/ex.png" url="/work/nexus-builders"></CaseStudy>
                 <CaseStudy name="Nexus Builders" category="UI/UX DESIGN" time="9-MONTHS" desc="Designing a platform that empowers college students to gain real-life experience through side-projects." linkText="Read more" img="/img/ex.png" url="/work/nexus-builders"></CaseStudy>
