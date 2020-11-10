@@ -1,3 +1,41 @@
+.section {
+  padding-bottom: 1.3rem;
+}
+
+.teams {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-1 {
+  padding-right: 4rem;
+  width: 200rem,;
+}
+
+.overview-2 {
+  width: 110%;
+}
+
+h2 {
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
 img {
   width: 100%;
 }

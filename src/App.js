@@ -25,13 +25,13 @@ function App() {
     <Router>
       <Headroom>
       <Navbar expand="lg" sticky="top">
-        <Navbar.Brand href="/work">Kayla Chea</Navbar.Brand>
+        <Navbar.Brand href={process.env.PUBLIC_URL +"/"}>Kayla Chea</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
           <Nav className="ml-auto">
-            <NavLink activeClassName="active" exact to="/work">Work</NavLink>
-            <NavLink activeClassName="active" exact to="/fun">Fun</NavLink>
-            <NavLink activeClassName="active" exact to="/about">About</NavLink>
+            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/work'}>Work</NavLink>
+            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/fun'}>Fun</NavLink>
+            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
             <a href="https://drive.google.com/file/d/1--4k5WQrwN_4lsw8hyjTWFhcpl_9sJrq/view" target="_blank" rel="noopener noreferrer">Resume</a>
           </Nav>
         </Navbar.Collapse>
@@ -40,6 +40,7 @@ function App() {
 
       <ScrollToTop />
       <Switch>
+        <Route exact path="/" component={WorkPage}></Route>
         <Route exact path="/work" component={WorkPage}>
           {/* <Work /> */}
         </Route>
