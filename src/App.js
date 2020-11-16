@@ -32,7 +32,7 @@ function App() {
             <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/work'}>Work</NavLink>
             <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/fun'}>Fun</NavLink>
             <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
-            <a href="https://drive.google.com/file/d/1--4k5WQrwN_4lsw8hyjTWFhcpl_9sJrq/view" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="https://drive.google.com/file/d/1AAXktaNHpIDT7sp29QkeN6rZA0tuj3Ku/view" target="_blank" rel="noopener noreferrer">Resume</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

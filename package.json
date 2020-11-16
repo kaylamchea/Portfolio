@@ -16,6 +16,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.4.0",
+    "react-figma-embed": "^1.0.1",
     "react-headroom": "^3.0.0",
     "react-helmet": "^6.1.0",
     "react-lightbox-component": "^1.2.1",

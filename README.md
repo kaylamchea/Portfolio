@@ -23,3 +23,6 @@ https://kyleamathews.github.io/react-headroom/
 
 Progress Bar on Scroll:
 https://github.com/mleralec/react-progressbar-on-scroll#readme
+
+Figma Embed:
+https://www.npmjs.com/package/react-figma-embed
