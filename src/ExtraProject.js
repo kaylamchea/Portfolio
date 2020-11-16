@@ -14,7 +14,7 @@ function ExtraProject({ name, category, time, desc, url, img, alt }) {
                     <Card.Img variant="top" src={img} alt={alt}/>
                 </Card.Link>
                 <div className="card-info">
-                    <Card.Title><Card.Link href={url}>{name} | {time}</Card.Link></Card.Title>
+                    <Card.Title><Card.Link href={url}>{name}{time}</Card.Link></Card.Title>
                     <Card.Text className="lower-opacity">{category}</Card.Text>
                     <Card.Text>{desc}</Card.Text>
                     <Card.Link href={url} className="highlight"><strong>Read more </strong><span role="img" aria-label="right arrow">→</span></Card.Link>

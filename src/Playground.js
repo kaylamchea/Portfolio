@@ -23,8 +23,8 @@ function Playground() {
                 <p>Here is a collection of other side projects I have worked on!</p>
             </div>
             <div className="extra-cases">
-                <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time="Winter 2020" desc="Designing and building my portfolio from scratch" img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
-                <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time="Winter 2020" desc="Designing and building my portfolio from scratch" img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
+                <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time=" | Winter 2020" desc="Designing and building my portfolio from scratch." img="/img/portfolio.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
+                <ExtraProject name="Digital Media" category="Infographic, Illustration" desc="A collection of graphic design works." img="/img/art.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
             </div>
             {/* <SimpleReactLightbox>
                 <SRLWrapper options={options}>
