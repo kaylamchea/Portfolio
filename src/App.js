@@ -1,19 +1,18 @@
-import React, { Component, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, NavLink } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Headroom from "react-headroom";
+import ScrollUpButton from "react-scroll-up-button";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import ScrollToTop from "./ScrollToTop";
-import WorkPage from "./WorkPage";
-import AboutPage from "./AboutPage";
-import FunPage from "./FunPage";
+import Work from "./Work";
+import About from "./About";
+import Playground from "./Playground";
 import NexusBuilders from "./NexusBuilders";
-
-import Headroom from "react-headroom";
-import ScrollUpButton from "react-scroll-up-button";
 
 function App() {
   // Code for scrolling to top on refresh from https://stackoverflow.com/questions/60813961/react-scroll-to-top-on-page-refresh-dont-restore-position
@@ -24,35 +23,31 @@ function App() {
   return (
     <Router>
       <Headroom>
-      <Navbar expand="lg" sticky="top">
-        <Navbar.Brand href={process.env.PUBLIC_URL +"/"}>Kayla Chea</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse>
-          <Nav className="ml-auto">
-            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/work'}>Work</NavLink>
-            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/fun'}>Fun</NavLink>
-            <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
-            <a href="https://drive.google.com/file/d/1AAXktaNHpIDT7sp29QkeN6rZA0tuj3Ku/view" target="_blank" rel="noopener noreferrer">Resume</a>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+        <Navbar expand="lg" sticky="top">
+          <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>Kayla Chea</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse>
+            <Nav className="ml-auto">
+              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/work'}>Work</NavLink>
+              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/playground'}>Playground</NavLink>
+              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
+              <a href="https://drive.google.com/file/d/1AAXktaNHpIDT7sp29QkeN6rZA0tuj3Ku/view" target="_blank" rel="noopener noreferrer">Resume</a>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
       </Headroom>
 
       <ScrollToTop />
       <Switch>
-        <Route exact path="/" component={WorkPage}></Route>
-        <Route exact path="/work" component={WorkPage}>
-          {/* <Work /> */}
-        </Route>
-        <Route exact path="/about" component={AboutPage}>
-          {/* <About /> */}
-        </Route>
-        <Route exact path="/fun" component={FunPage}></Route>
+        <Route exact path="/" component={Work}></Route>
+        <Route exact path="/work" component={Work}></Route>
+        <Route exact path="/about" component={About}></Route>
+        <Route exact path="/playground" component={Playground}></Route>
         <Route exact path="/work/nexus-builders" component={NexusBuilders}></Route>
       </Switch>
 
       <ScrollUpButton ContainerClassName="AnyClassForContainer" TransitionClassName="AnyClassForTransition">
-                <img src="https://www.flaticon.com/svg/static/icons/svg/130/130906.svg" alt="Up arrow"></img>
+        <img src="https://www.flaticon.com/svg/static/icons/svg/130/130906.svg" alt="Up arrow"></img>
       </ScrollUpButton>
 
       <footer>
@@ -73,16 +68,5 @@ function App() {
     </Router>
   );
 }
-
-// function Work() {
-//   return (
-//   );
-// }
-
-// function About() {
-//   return (
-//     <AboutPage></AboutPage>
-//   );
-// }
 
 export default App;

@@ -13,6 +13,22 @@ body {
     text-decoration: underline;
 }
 
+a {
+    color: #303131;
+}
+
+.highlight {
+    color: #5b64e1;
+}
+
+a:hover{
+    color:#5b64e1;
+}
+
+.lower-opacity {
+    opacity: .7;
+}
+
 /* Navigation */
 .headroom--pinned, .headroom--unpinned {
     width: 80%;

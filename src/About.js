@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './AboutPage.css';
+import React from 'react';
 
-function AboutPage() {
+import './About.css';
+
+function About() {
     return (
         <div className="about">
             <img alt="" src="/img/me.jpg" className="about-img"></img>
@@ -18,4 +19,4 @@ function AboutPage() {
     );
 }
 
-export default AboutPage;
+export default About;

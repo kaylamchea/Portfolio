@@ -18,11 +18,22 @@
 .intro-desc {
     font-weight: lighter;
     font-size: 2rem;
+    padding-bottom: 1.3rem;
 }
 
-.Typewriter {
-    display: inline;
-    color: #5b64e1;
+#case-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+#written-socials {
+    font-size: 1.2rem;
+}
+
+#written-socials a {
+    padding-right: 1rem;
 }
 
 .intro p {

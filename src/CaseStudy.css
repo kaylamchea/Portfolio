@@ -22,12 +22,12 @@
     padding-bottom: 1.5rem;
 }
 
-.case-study a {
-    color: #303131;
-}
-
 .case-study h1 {
     font-weight: bolder;
+}
+
+h1 a:hover {
+    color: #303131;
 }
 
 .project-cat {

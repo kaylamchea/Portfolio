@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
-
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import './FunPage.css';
+import './Playground.css';
 
-function FunPage() {
+import ExtraProject from './ExtraProject';
+
+function Playground() {
     const options = {
         settings: {
             disablePanzoom: true
@@ -17,12 +18,15 @@ function FunPage() {
 
     return (
         <React.Fragment>
-            <div className="fun-desc">
-                <h1>What I do for fun~</h1>
-                <p>In addition to my professional design work, I love to exercise my creativity through other things. Here is a collection of my side projects and artworks!</p>
-
+            <div className="playground-desc">
+                <h1>Additional Work</h1>
+                <p>Here is a collection of other side projects I have worked on!</p>
             </div>
-            <SimpleReactLightbox>
+            <div className="extra-cases">
+                <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time="Winter 2020" desc="Designing and building my portfolio from scratch" img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
+                <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time="Winter 2020" desc="Designing and building my portfolio from scratch" img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject>
+            </div>
+            {/* <SimpleReactLightbox>
                 <SRLWrapper options={options}>
                     <Container>
                         <Row>
@@ -39,9 +43,9 @@ function FunPage() {
                         </Row>
                     </Container>
                 </SRLWrapper>
-            </SimpleReactLightbox>
+            </SimpleReactLightbox> */}
         </React.Fragment>
     );
 }
 
-export default FunPage;
+export default Playground;
