@@ -23,7 +23,7 @@ function NexusBuilders() {
             <div>
                 <h1>Nexus Builders</h1>
                 <p>Designing a platform that empowers college students to gain real-life experience through side-projects.</p>
-                <img className="responsive-image" src="/img/Nexus-Builders/Nexus-2.png" alt="mobile mockups of the application"></img>
+                <img className="responsive-image" src="/img/Nexus-Builders/preview2.png" alt="mobile mockups of the application"></img>
             </div>
 
             <div className="sticky">
@@ -139,7 +139,7 @@ function NexusBuilders() {
                         <h3>Wireframes</h3>
                         <p>Based on our site map and previous sketches, I created some wireframes.</p>
                         <Zoom>
-                            <img className="responsive-image" alt="wireframes of our application" src="/img/Nexus-Builders/Wireframe.png"></img>
+                            <img className="responsive-image" alt="wireframes of our application" src="/img/Nexus-Builders/wireframe.png"></img>
                         </Zoom>
                     </div>
                 </section>
@@ -175,10 +175,10 @@ function NexusBuilders() {
                     <div className="section">
                         <h3>User Flows</h3>
                         <Zoom>
-                            <img className="responsive-image" alt="Mockups that demonstrate how to create a project" src="/img/Nexus-Builders/userflow-1.png"></img>
+                            <img className="responsive-image" alt="Mockups that demonstrate how to create a project" src="/img/Nexus-Builders/userflow1.png"></img>
                         </Zoom>
                         <Zoom>
-                            <img className="responsive-image" alt="Mockups that demonstrate how to recruit a team member" src="/img/Nexus-Builders/userflow-2.png"></img>
+                            <img className="responsive-image" alt="Mockups that demonstrate how to recruit a team member" src="/img/Nexus-Builders/userflow2.png"></img>
                         </Zoom>
 
                     </div>

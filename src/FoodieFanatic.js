@@ -186,13 +186,13 @@ function FoodieFanatic() {
                     <div className="section">
                         <h3>User Flows</h3>
                         <Zoom>
-                            <img className="responsive-image" src="/img/Foodie-Fanatic/Flow1.png" alt="Sitemap outlining framework of the website"></img>
+                            <img className="responsive-image" src="/img/Foodie-Fanatic/flow1.png" alt="Sitemap outlining framework of the website"></img>
                         </Zoom>
                         <Zoom>
-                            <img className="responsive-image" src="/img/Foodie-Fanatic/Flow2.png" alt="Sitemap outlining framework of the website"></img>
+                            <img className="responsive-image" src="/img/Foodie-Fanatic/flow2.png" alt="Sitemap outlining framework of the website"></img>
                         </Zoom>
                         <Zoom>
-                            <img className="responsive-image" src="/img/Foodie-Fanatic/Flow3.png" alt="Sitemap outlining framework of the website"></img>
+                            <img className="responsive-image" src="/img/Foodie-Fanatic/flow3.png" alt="Sitemap outlining framework of the website"></img>
                         </Zoom>
                     </div>
                 </section>

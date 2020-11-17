@@ -23,7 +23,7 @@ function Work() {
             
             <div id="case-studies">
                 <h1 id="case-title">Selected <span className="highlight">Case Studies.</span></h1>
-                <CaseStudy name="Nexus Builders" category="UX Design/Research, Mobile Design" time="Winter 2019" desc="Empowering students to gain hands-on experience with a project search platform." img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work/nexus-builders'}></CaseStudy>
+                <CaseStudy name="Nexus Builders" category="UX Design/Research, Mobile Design" time="Winter 2019" desc="Empowering students to gain hands-on experience with a project search platform." img="/img/Nexus-Builders/preview1.png" url={process.env.PUBLIC_URL + '/work/nexus-builders'}></CaseStudy>
                 <CaseStudy name="Foodie Fanatic" category="IA, UX Design, Mobile/Web Design" time="Winter 2019" desc="Redesigning a food website to meet user needs and business goals." img="/img/Foodie-Fanatic/preview.png" url={process.env.PUBLIC_URL + '/work/foodie-fanatic'}></CaseStudy>
                 <CaseStudy name="LocateUW" category="UX Design/Research, Mobile Design" time="Fall 2018" desc="Designing a Campus Navigation App for UW." img="/img/Locate-UW/preview.png" url={process.env.PUBLIC_URL + '/work/locate-uw'}></CaseStudy>
             </div>
