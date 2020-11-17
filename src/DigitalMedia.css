@@ -1,0 +1,23 @@
+.row img {
+    width: 90%;
+    margin: auto;    
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.container-fluid {
+    padding-top: 4rem;
+}
+
+.playground-desc{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 0rem;
+    text-align: center;
+}
+
+#digital-media {
+    text-align: center;
+    padding: 2rem 0;
+}

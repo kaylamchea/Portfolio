@@ -1,26 +1,29 @@
 import React from 'react';
-import './NexusBuilders.css';
+import './App.css';
 import Scrollspy from 'react-scrollspy';
 import ProgressBar from "react-progressbar-on-scroll";
 
-const iframe = '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FecsbLHrbKFXGROP9vrQmO4%2FNexus-Builders%3Fnode-id%3D2%253A17859%26scaling%3Dscale-down" allowfullscreen></iframe>'; 
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
+
+const iframe = '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="1000" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FecsbLHrbKFXGROP9vrQmO4%2FNexus-Builders%3Fnode-id%3D2%253A17859%26scaling%3Dscale-down" allowfullscreen></iframe>';
 
 function Iframe(props) {
     return (
-      <div
-        dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : "" }}
-      />
+        <div
+            dangerouslySetInnerHTML={{ __html: props.iframe ? props.iframe : "" }}
+        />
     );
-  }
+}
 
 function NexusBuilders() {
     return (
         <React.Fragment>
             <ProgressBar color="#5b64e1" />
-            <div className="nexus-header">
+            <div>
                 <h1>Nexus Builders</h1>
                 <p>Designing a platform that empowers college students to gain real-life experience through side-projects.</p>
-                <img src="/img/Nexus-Builders/Nexus-2.png" alt="mobile mockups of the application"></img>
+                <img className="responsive-image" src="/img/Nexus-Builders/Nexus-2.png" alt="mobile mockups of the application"></img>
             </div>
 
             <div className="sticky">
@@ -51,24 +54,27 @@ function NexusBuilders() {
                         </div>
 
                         <div className="overview-2">
-                            <h3>Project Type</h3>
-                            <p>Side Project</p>
+                            <h3>Context</h3>
+                            <p className="lower-opacity">Side Project</p>
 
-                            <h3>Project Date</h3>
-                            <p>9 months (Oct 2019 - June 2020)</p>
+                            <h3>Time Frame</h3>
+                            <p className="lower-opacity">Oct 2019 - June 2020</p>
 
                             <h3>My Role</h3>
-                            <p>UX Designer, UX Researcher</p>
+                            <p className="lower-opacity">UX Designer, UX Researcher</p>
+
+                            <h3>Tools</h3>
+                            <p className="lower-opacity">Figma</p>
 
                             <h3>Team Members</h3>
                             <p className="teams">Engineering</p>
-                            <p>Vincent Widjaya, Sunny Lee</p>
+                            <p className="lower-opacity">Vincent Widjaya, Sunny Lee</p>
                             <p className="teams">Design</p>
-                            <p>Kayla Chea, Rachel Rodney, Susanna Liu, Jelly Park</p>
+                            <p className="lower-opacity">Kayla Chea, Rachel Rodney, Susanna Liu, Jelly Park</p>
                             <p className="teams">Project Manager</p>
-                            <p>Jaewon Choi</p>
+                            <p className="lower-opacity">Jaewon Choi</p>
                             <p className="teams">Business</p>
-                            <p>Kate Kim</p>
+                            <p className="lower-opacity">Kate Kim</p>
                         </div>
                     </div>
                 </section>
@@ -117,20 +123,24 @@ function NexusBuilders() {
 
                     <div className="section">
                         <h3>Brainstorming</h3>
-                        <img alt="3 sitting people staring at a whiteboard of sketches" src="/img/Nexus-Builders/ideation.jpeg"></img>
+                        <img className="responsive-image" alt="3 sitting people staring at a whiteboard of sketches" src="/img/Nexus-Builders/ideation.jpeg"></img>
                         <p>We knew we wanted to create a mobile-friendly web application so we started by brainstorming the features we wanted our application to have. We then had each designer create 10 screens and voted on which aspects we liked best.</p>
                     </div>
 
                     <div className="section">
                         <h3>Site Map</h3>
                         <p>We then created a site map based on our sketches.</p>
-                        <img alt="sitemap of our application" src="/img/Nexus-Builders/sitemap.png"></img>
+                        <Zoom>
+                            <img className="responsive-image" alt="sitemap of our application" src="/img/Nexus-Builders/sitemap.png"></img>
+                        </Zoom>
                     </div>
 
                     <div className="section">
                         <h3>Wireframes</h3>
                         <p>Based on our site map and previous sketches, I created some wireframes.</p>
-                        <img alt="wireframes of our application" src="/img/Nexus-Builders/Wireframe.png"></img>
+                        <Zoom>
+                            <img className="responsive-image" alt="wireframes of our application" src="/img/Nexus-Builders/Wireframe.png"></img>
+                        </Zoom>
                     </div>
                 </section>
 
@@ -164,10 +174,15 @@ function NexusBuilders() {
                     <p>Live Application</p> */}
                     <div className="section">
                         <h3>User Flows</h3>
-                        <img alt="Mockups that demonstrate how to create a project" src="/img/Nexus-Builders/userflow-1.png"></img>
-                        <img alt="Mockups that demonstrate how to recruit a team member" src="/img/Nexus-Builders/userflow-2.png"></img>
+                        <Zoom>
+                            <img className="responsive-image" alt="Mockups that demonstrate how to create a project" src="/img/Nexus-Builders/userflow-1.png"></img>
+                        </Zoom>
+                        <Zoom>
+                            <img className="responsive-image" alt="Mockups that demonstrate how to recruit a team member" src="/img/Nexus-Builders/userflow-2.png"></img>
+                        </Zoom>
+
                     </div>
-{/* 
+                    {/* 
                     <div className="section">
                         <h3>Addressing User Needs</h3>
                     </div> */}

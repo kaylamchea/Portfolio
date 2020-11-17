@@ -1,0 +1,8 @@
+#wireframes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wireframes img {
+    width: 30%;
+}

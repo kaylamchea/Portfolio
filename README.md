@@ -26,3 +26,6 @@ https://github.com/mleralec/react-progressbar-on-scroll#readme
 
 Figma Embed:
 https://www.npmjs.com/package/react-figma-embed
+
+Medium Zoom In on Images:
+https://www.npmjs.com/package/react-medium-image-zoom

@@ -10,7 +10,7 @@ function Work() {
         <React.Fragment>
             <div className="landing-page">
                 <div className="intro">
-                    <h1 className="intro-name">Hi, my name is Kayla~ <span role="img" aria-label="waving hand">👋</span></h1>
+                    <h1 className="intro-name">Hi, my name is Kayla. <span role="img" aria-label="waving hand">👋</span></h1>
                     <p className="intro-desc">I'm a multidisciplinary designer with a focus on <span className="highlight">UX design</span>. I'm passionate about addressing ongoing problems through humane design.</p>
                     <div id="written-socials">
                         <a className="highlight" href="mailto: kaylamchea@hotmail.com">Email<span role="img" aria-label="up-right arrow">↗</span></a>
@@ -22,10 +22,10 @@ function Work() {
             </div>
             
             <div id="case-studies">
-                <h1 id="case-title">Case Studies</h1>
-                <CaseStudy name="Nexus Builders" category="UX Design/Research" time="Winter 2019" desc="Empowering students to gain hands-on experience with a project search platform." img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work/nexus-builders'}></CaseStudy>
-                <CaseStudy name="Foodie Fanatic" category="Information Architecture, UX Design" time="Winter 2019" desc="Redesigning a food website to meet user needs and business goals." img="/img/Foodie-1.png"></CaseStudy>
-                <CaseStudy name="Labyrinth" category="UX Research" time="Winter 2019" desc="Envisioning a restorative space for stressed students on campus." img="/img/Labyrinth-1.png"></CaseStudy>
+                <h1 id="case-title">Selected <span className="highlight">Case Studies.</span></h1>
+                <CaseStudy name="Nexus Builders" category="UX Design/Research, Mobile Design" time="Winter 2019" desc="Empowering students to gain hands-on experience with a project search platform." img="/img/Nexus-Builders/Nexus-1.png" url={process.env.PUBLIC_URL + '/work/nexus-builders'}></CaseStudy>
+                <CaseStudy name="Foodie Fanatic" category="IA, UX Design, Mobile/Web Design" time="Winter 2019" desc="Redesigning a food website to meet user needs and business goals." img="/img/Foodie-Fanatic/preview.png" url={process.env.PUBLIC_URL + '/work/foodie-fanatic'}></CaseStudy>
+                <CaseStudy name="LocateUW" category="UX Design/Research, Mobile Design" time="Fall 2018" desc="Designing a Campus Navigation App for UW." img="/img/Locate-UW/preview.png" url={process.env.PUBLIC_URL + '/work/locate-uw'}></CaseStudy>
             </div>
         </React.Fragment>
     );

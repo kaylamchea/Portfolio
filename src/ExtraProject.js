@@ -5,19 +5,23 @@ import Card from 'react-bootstrap/Card';
 
 import './ExtraProject.css'
 
-function ExtraProject({ name, category, time, desc, url, img, alt }) {
+function ExtraProject({ name, category, time, desc, url, img, alt, disabled, text, arrow, highlight }) {
     return (
         <React.Fragment>
             <Card>
             <Card.Body>
-                <Card.Link href={url}>
+                <Card.Link href={url} className={disabled}>
                     <Card.Img variant="top" src={img} alt={alt}/>
                 </Card.Link>
                 <div className="card-info">
-                    <Card.Title><Card.Link href={url}>{name}{time}</Card.Link></Card.Title>
+                    <Card.Title><Card.Link href={url} className={disabled}>{name}{time}</Card.Link></Card.Title>
                     <Card.Text className="lower-opacity">{category}</Card.Text>
                     <Card.Text>{desc}</Card.Text>
-                    <Card.Link href={url} className="highlight"><strong>Read more </strong><span role="img" aria-label="right arrow">→</span></Card.Link>
+                    <Card.Link href={url} className={disabled}>
+                        <span className={highlight}>
+                        <strong>{text} </strong><span role="img" aria-label="right arrow">{arrow}</span>
+                        </span>
+                    </Card.Link>
                 </div>
             </Card.Body>
             </Card>

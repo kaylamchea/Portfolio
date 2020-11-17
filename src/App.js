@@ -13,6 +13,9 @@ import Work from "./Work";
 import About from "./About";
 import Playground from "./Playground";
 import NexusBuilders from "./NexusBuilders";
+import DigitalMedia from "./DigitalMedia";
+import FoodieFanatic from "./FoodieFanatic";
+import LocateUW from "./LocateUW";
 
 function App() {
   // Code for scrolling to top on refresh from https://stackoverflow.com/questions/60813961/react-scroll-to-top-on-page-refresh-dont-restore-position
@@ -43,7 +46,10 @@ function App() {
         <Route exact path="/work" component={Work}></Route>
         <Route exact path="/about" component={About}></Route>
         <Route exact path="/playground" component={Playground}></Route>
+        <Route exact path="/playground/digital-media" component={DigitalMedia}></Route>
         <Route exact path="/work/nexus-builders" component={NexusBuilders}></Route>
+        <Route exact path="/work/foodie-fanatic" component={FoodieFanatic}></Route>
+        <Route exact path="/work/locate-uw" component={LocateUW}></Route>
       </Switch>
 
       <ScrollUpButton ContainerClassName="AnyClassForContainer" TransitionClassName="AnyClassForTransition">
