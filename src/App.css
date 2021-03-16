@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700;1,900&&display=swap');
 
+<<<<<<< Updated upstream
 /* General styles */
 
 body {
@@ -8,26 +9,50 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #303131;
+=======
+body, .navbar {
+  background-color: #FDFDFD;
+}
+
+main {
+  font-family: 'Nunito Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  color: #37363B;
+  background-color: #FDFDFD;
+  width: 90%;
+  max-width: 900px;
+>>>>>>> Stashed changes
 }
 
 .underline {
-    text-decoration: underline;
+  border-bottom: 1px solid #5b64e1;
 }
 
-a {
-    color: #303131;
+a.highlight {
+  color: #5b64e1;
+  font-weight: 400;
 }
 
 .highlight {
-    color: #5b64e1;
+  color: #5b64e1;
+  font-weight: 700;
 }
 
 a:hover {
+<<<<<<< Updated upstream
     color: #5b64e1;
+=======
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 
 .lower-opacity {
-    opacity: .7;
+  opacity: .7;
+}
+
+strong {
+  font-weight: 700;
 }
 
 button:focus {
@@ -36,52 +61,119 @@ button:focus {
 
 
 /* Navigation */
+<<<<<<< Updated upstream
 
 .headroom--pinned,
 .headroom--unpinned {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+=======
+.headroom--pinned,
+.headroom--unpinned {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+>>>>>>> Stashed changes
 }
 
 nav {
-    background-color: white;
+  background-color: white;
 }
 
 nav,
 .navbar-brand {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .sticky-top {
-    padding-top: 3em;
+  padding-top: 3em;
 }
 
 .navbar-nav a {
-    display: block;
-    margin-left: 1.5rem;
-    color: rgba(0, 0, 0, .5);
+  display: block;
+  margin-left: 1.5rem;
+  color: #37363B;
 }
 
 .navbar-brand {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 nav a.active {
-    color: #5b64e1;
-    border-bottom: 1px solid #5b64e1;
-    padding-bottom: 3px;
+  color: #5b64e1;
+}
+
+nav a {
+  position: relative;
 }
 
 nav a:hover {
-    text-decoration: none;
-    color: #5b64e1;
+  text-decoration: none;
+}
+
+nav a.nav-hover:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color: #5b64e1;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a.nav-hover:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .navbar {
-    padding: 2rem 0rem;
+  padding: 2rem 0rem;
 }
 
+/* Nexus Builders */
+#Research li {
+  padding: 0;
+}
+
+.other-domains img {
+  height: 5rem;
+  width: auto;
+  margin: 1rem 2rem;
+}
+
+.other-domains {
+  text-align: center;
+}
+
+.section {
+  padding-bottom: 1.3rem;
+}
+
+section strong {
+  color: #5b64e1;
+}
+
+.teams {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-1 {
+  padding-right: 4rem;
+  width: 200rem, ;
+}
+
+<<<<<<< Updated upstream
 
 /* Footer */
 
@@ -91,26 +183,99 @@ footer {
     padding-bottom: 2rem;
     color: rgba(0, 0, 0, .5);
     font-size: .9rem;
+=======
+.overview-2 {
+  width: 75rem;
 }
 
-footer span {
-    color: black;
+section h2 {
+  font-weight: 800;
+  padding-bottom: 1rem;
 }
 
-.socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
+section h3 {
+  font-size: 20px;
+  font-weight: 800;
 }
 
-.socials img {
-    width: 3.1rem;
-    height: auto;
-    padding: 0 .7rem;
+section p {
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
+section a {
+  color: #5b64e1;
+}
+
+.nexus-header img {
+  width: 100%;
+}
+
+section img {
+  width: 100%;
+  padding: 1rem 0rem;
+}
+
+section {
+  width: 85%;
+}
+
+.sticky {
+  /* position: fixed;
+    top: 10rem;
+    left: -10px; */
+  position: sticky;
+  top: 0;
+}
+
+.sticky>.scrollspy {
+  position: absolute;
+  align-self: start;
+  margin-top: 100px;
+  z-index: 1;
+  right: -5px;
+  overflow-x: hidden;
+  padding-left: 0;
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  max-width: 160px;
+}
+
+.scrollspy {
+  visibility: hidden;
+}
+
+.scrollspy li {
+  margin-left: 1rem;
+  padding: 4px 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  padding: 10px 0;
+}
+
+a {
+  color: black;
+>>>>>>> Stashed changes
+}
+
+.isCurrent {
+  font-weight: bold;
+}
+
+.isCurrent a,
+h2 {
+  color: #5b64e1;
+}
+
+section {
+  padding-top: 60px;
 }
 
 @media only screen and (min-width: 992px) {
+<<<<<<< Updated upstream
     body {
         width: 60%;
     }
@@ -260,4 +425,11 @@ section {
     .scrollspy {
         visibility: visible;
     }
+=======
+ 
+
+  .row img {
+    padding-bottom: 0;
+  }
+>>>>>>> Stashed changes
 }

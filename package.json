@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "agastya": "^4.2.0",
     "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
     "dual-side-scroll": "^1.2.0",
     "gh-pages": "^3.1.0",

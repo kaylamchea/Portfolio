@@ -1,0 +1,26 @@
+.card-body {
+    padding: 0;
+}
+
+.card {
+    border-radius: 1rem;
+    width: 45%;
+    height: auto;
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card-info {
+    padding: 2.5rem;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-title, .card-text, .card-link {
+    margin-bottom: .5rem;
+}

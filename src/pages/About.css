@@ -1,0 +1,74 @@
+.about {
+    display: flex;
+    padding-top: 3rem;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 2rem;
+}
+
+.student-org p {
+    margin-bottom: 0;
+}
+
+.about-sticky {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+.about-sticky p {
+    padding-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.about-sticky img {
+    width: 20rem;
+    padding-right: 2rem;
+}
+
+/* Swap images on hover. Credit: https://stackoverflow.com/questions/18032220/css-change-image-src-on-imghover */
+.about a img:nth-child(2) {
+    display: none;  
+  }
+
+.about a:hover img:nth-child(2) {
+    display: block;  
+  }
+
+.about a:hover img:first-child {
+    display: none;  
+  }
+
+.about-text h1, .skills h1 {
+    font-size: 20px;
+    font-weight: 900;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    letter-spacing: .5px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.about-container {
+    margin-bottom: 2rem;
+}
+
+.skills {
+    padding-top: 2rem;
+}
+
+.skills h1 {
+    padding-top: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-container h1 {
+   font-size: 16px;
+   padding-bottom: 1rem;
+}

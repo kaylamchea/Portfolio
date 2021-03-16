@@ -1,0 +1,108 @@
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+#wave {
+    display: inline-block;
+    animation: rotating 1.2s linear infinite alternate;
+}
+
+@keyframes rotating {
+    from {
+
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        transform: rotate(40deg);
+    }
+}
+
+.intro-name {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 60px;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+}
+
+.intro-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 1.3rem;
+    letter-spacing: .5px;
+}
+
+.view-studies {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+}
+
+.view-studies:hover {
+    cursor: pointer;
+}
+
+#case-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-bottom: 5rem;
+}
+
+#socials {
+    display: flex;
+}
+
+#socials img {
+    width: 1.7rem;
+    height: auto;
+    margin-right: .7rem;
+}
+
+.intro p {
+    margin: 0;
+}
+
+.down-arrow {
+    width: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+.AnyClassForContainer {
+    position: fixed;
+    right: -100px;
+    bottom: 40px;
+    transition: right 0.5s;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.AnyClassForContainer img {
+    width: 2rem;
+}
+
+.AnyClassForTransition {
+    right: 20px;
+}
+
+.case-study {
+    padding-bottom: 8rem;
+}
