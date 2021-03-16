@@ -7,16 +7,6 @@ import ScrollUpButton from "react-scroll-up-button";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-<<<<<<< Updated upstream
-import ScrollToTop from "./ScrollToTop";
-import Work from "./Work";
-import About from "./About";
-import Playground from "./Playground";
-import NexusBuilders from "./NexusBuilders";
-import DigitalMedia from "./DigitalMedia";
-import FoodieFanatic from "./FoodieFanatic";
-import LocateUW from "./LocateUW";
-=======
 import Footer from './components/Footer';
 import ScrollToTop from "./hooks/ScrollToTop";
 import Work from "./pages/Work";
@@ -26,7 +16,6 @@ import NexusBuilders from "./pages/NexusBuilders";
 import DigitalMedia from "./pages/DigitalMedia";
 
 import './App.css';
->>>>>>> Stashed changes
 
 function App() {
   // Code for scrolling to top on refresh from https://stackoverflow.com/questions/60813961/react-scroll-to-top-on-page-refresh-dont-restore-position
@@ -35,35 +24,6 @@ function App() {
   }
 
   return (
-<<<<<<< Updated upstream
-    <Router>
-      <Headroom>
-        <Navbar expand="lg" sticky="top">
-          <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>Kayla Chea</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="ml-auto">
-              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/work'}>Work</NavLink>
-              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/playground'}>Playground</NavLink>
-              <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>About</NavLink>
-              <a href="https://drive.google.com/file/d/1AAXktaNHpIDT7sp29QkeN6rZA0tuj3Ku/view" target="_blank" rel="noopener noreferrer">Resume</a>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </Headroom>
-
-      <ScrollToTop />
-      <Switch>
-        <Route exact path="/" component={Work}></Route>
-        <Route exact path="/work" component={Work}></Route>
-        <Route exact path="/about" component={About}></Route>
-        <Route exact path="/playground" component={Playground}></Route>
-        <Route exact path="/playground/digital-media" component={DigitalMedia}></Route>
-        <Route exact path="/work/nexus-builders" component={NexusBuilders}></Route>
-        <Route exact path="/work/foodie-fanatic" component={FoodieFanatic}></Route>
-        <Route exact path="/work/locate-uw" component={LocateUW}></Route>
-      </Switch>
-=======
     <React.Fragment>
     <main>
       <Router>
@@ -81,7 +41,6 @@ function App() {
             </Navbar.Collapse>
           </Navbar>
         </Headroom>
->>>>>>> Stashed changes
 
         <ScrollToTop />
         <Switch>

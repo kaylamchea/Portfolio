@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './NexusBuilders.css';
 import Scrollspy from 'react-scrollspy';
 import ProgressBar from "react-progressbar-on-scroll";
 
@@ -123,11 +123,7 @@ function NexusBuilders() {
 
                     <div className="section">
                         <h3>Brainstorming</h3>
-<<<<<<< Updated upstream:src/NexusBuilders.js
                         <img className="responsive-image" alt="3 sitting people staring at a whiteboard of sketches" src="/img/Nexus-Builders/ideation.jpeg"></img>
-=======
-                        <img alt="3 sitting people staring at a whiteboard of sketches" src="/img/Nexus-Builders/Ideation.png"></img>
->>>>>>> Stashed changes:src/pages/NexusBuilders.js
                         <p>We knew we wanted to create a mobile-friendly web application so we started by brainstorming the features we wanted our application to have. We then had each designer create 10 screens and voted on which aspects we liked best.</p>
                     </div>
 

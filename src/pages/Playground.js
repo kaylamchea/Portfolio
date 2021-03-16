@@ -12,11 +12,6 @@ function Playground() {
                 <p>Here is a collection of other projects I have worked on!</p>
             </div>
             <div className="extra-cases">
-<<<<<<< Updated upstream:src/Playground.js
-                <ExtraProject disabled="disabled" text="Coming soon" name="My Portfolio" category="Front-End Development, UX/UI Design" time=" | Winter 2020" desc="Designing and building my portfolio from scratch." img="/img/portfolio.png" url={process.env.PUBLIC_URL + '/playground/digital-media'}></ExtraProject>
-                <ExtraProject highlight="highlight" arrow="→" text="Read more" name="Digital Media" category="Infographic, Illustration" desc="A collection of graphic design works." img="/img/art.png" url={process.env.PUBLIC_URL + '/playground/digital-media'}></ExtraProject>
-            </div>
-=======
                 {/* <ExtraProject name="My Portfolio" category="Front-End Development, UX/UI Design" time=" | Winter 2020" desc="Designing and building my portfolio from scratch." img="/img/portfolio.png" url={process.env.PUBLIC_URL + '/work'}></ExtraProject> */}
                 <ExtraProject name="Digital Media" category="Infographic, Illustration" desc="A collection of graphic design works." img="/img/art.png" url={process.env.PUBLIC_URL + '/playground/digital-media'}></ExtraProject>
             </div>
@@ -39,7 +34,6 @@ function Playground() {
                 </SRLWrapper>
             </SimpleReactLightbox> */}
             <Footer />
->>>>>>> Stashed changes:src/pages/Playground.js
         </React.Fragment>
     );
 }
