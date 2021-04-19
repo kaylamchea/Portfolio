@@ -15,7 +15,7 @@ function Footer() {
           <div className="footer-icons">
             <a className="highlight underline mr-3" href="https://www.linkedin.com/in/kaylamchea/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a className="highlight underline mr-3" href="https://github.com/kaylamchea" target="_blank" rel="noopener noreferrer">Github</a>
-            <a className="highlight underline" href="https://www.behance.net/kaylachea" target="_blank" rel="noopener noreferrer">Behance</a>
+            {/* <a className="highlight underline" href="https://www.behance.net/kaylachea" target="_blank" rel="noopener noreferrer">Behance</a> */}
             {/* <a href="mailto: kaylamchea@hotmail.com">
               <img src="https://www.flaticon.com/svg/static/icons/svg/37/37572.svg" alt="letter"></img>
             </a>

@@ -1,0 +1,65 @@
+/* .coding-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.coding-project img {
+    width: 100%;
+    height: auto;
+    /* padding-right: 2rem; */
+}
+
+.project-type {
+    font-size: 17px;
+    padding-bottom: 2px;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    font-weight: 400;
+    font-style: italic;
+    opacity: .8;
+}
+
+.coding-project span {
+    /* background-color: rgba(119, 119, 119, 0.2); */
+    background: #E3EAFF;
+    /* border-radius: 10%; */
+    /* padding: 1px 8px; */
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    font-family: 'Source Code Pro';
+    color: #37363B;
+}
+
+.project-tags {
+    padding-bottom: 20px;
+}
+
+.project-links a {
+    /* color: #5C64E0; */
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* .project-links img {
+    width: 20px;
+    height: auto;
+    margin-right: .7rem;
+    padding-right: 0;
+} */
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}

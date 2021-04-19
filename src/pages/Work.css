@@ -1,5 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&Source+Code+Pro:wght@600&display=swap');
+
+
+.intro .code-font {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    color: #B25392;
+    letter-spacing: 2.5px;
+}
+
+.intro .ux-font {
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 500;
+    color: #2260FC;
+    letter-spacing: 4px;
+    /* font-style: italic; */
+}
+
+#case-studies h1, #code h1 {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+/* Case Studies */
+.case-study img {
+    width: 100%;
+}
+
 .landing-page {
-    height: 100vh;
+    /* height: 100vh; */
+    margin: 8rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,6 +72,7 @@
     line-height: 35px;
     padding-bottom: 1.3rem;
     letter-spacing: .5px;
+    width: 80%;
 }
 
 .view-studies {
@@ -48,7 +80,7 @@
     font-weight: 700;
     letter-spacing: 1px;
     padding-top: 3rem;
-    padding-bottom: 9rem;
+    padding-bottom: 8rem;
 }
 
 .view-studies:hover {
@@ -105,4 +137,9 @@
 
 .case-study {
     padding-bottom: 8rem;
+}
+
+.code-container {
+    /* display: flex;
+    justify-content: space-between; */
 }
