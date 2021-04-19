@@ -1,6 +1,4 @@
 import React from 'react';
-import ScrollIntoView from 'react-scroll-into-view';
-
 import './Work.css';
 import CaseStudy from "../components/CaseStudy";
 
@@ -43,18 +41,15 @@ function Work() {
                         <a className="highlight" href="https://www.linkedin.com/in/kaylamchea/" target="_blank" rel="noopener noreferrer">LinkedIn<span role="img" aria-label="up-right arrow">↗</span></a>
                         <a className="highlight" href="https://github.com/kaylamchea" target="_blank" rel="noopener noreferrer">Github<span role="img" aria-label="up-right arrow">↗</span></a> */}
                     </div>
-                    {/* <ScrollIntoView selector="#case-studies"><p className="view-studies">View my work below ↓</p></ScrollIntoView> */}
                 </div>
-                {/* <ScrollIntoView selector="#case-studies"><input type="image" className="down-arrow" src="https://www.flaticon.com/svg/static/icons/svg/130/130907.svg" alt="Down arrow" /></ScrollIntoView> */}
             </div>
-
 
             <div id="case-studies" className="mb-5" data-aos="fade-up" data-aos-duration="1500">
                 <h1 className="work-title">view case studies ↓</h1>
                 <CaseStudy></CaseStudy>
             </div>
 
-            <div id="code" data-aos="fade-up" data-aos-duration="1500">
+            <div id="code" className="pt-5" data-aos="fade-up" data-aos-duration="1500">
                 <h1 className="work-title">view coding projects ↓</h1>
                 <div className="container px-0">
                     <div className="row mb-2">

@@ -3,5 +3,21 @@
 }
 
 .case-title {
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 44px;
 }
+
+.case-title a {
+    border-bottom: 1.5px solid #37363B;
+    line-height: 3rem;
+    display: inline-block;
+}
+
+.case-title a:hover {
+    color: #37363B;
+}
+
+.case-study p {
+    font-size: 17px;;
+}
+

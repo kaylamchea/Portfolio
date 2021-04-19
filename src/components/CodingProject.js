@@ -10,7 +10,7 @@ function CodingProject({ image, alt, title, desc, tags, github, website }) {
             </a>
             <div className="project-text">
                 {/* <p className="project-type">Web Design/Development</p> */}
-                <p className="project-title">{title}</p>
+                <a href={website} target="_blank" rel="noopener noreferrer"><p className="project-title">{title}</p></a>
                 <p className="project-desc">{desc}</p>
                 <div className="project-tags">
                     {/* <span>React</span>

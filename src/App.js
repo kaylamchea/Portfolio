@@ -4,22 +4,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Headroom from "react-headroom";
 import ScrollUpButton from "react-scroll-up-button";
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { NavHashLink } from 'react-router-hash-link';
 
 import Footer from './components/Footer';
 import ScrollToTop from "./hooks/ScrollToTop";
 import Work from "./pages/Work";
 import About from "./pages/About";
-import Playground from "./pages/Playground";
 import NexusBuilders from "./pages/NexusBuilders";
-import DigitalMedia from "./pages/DigitalMedia";
 import Buddy from "./pages/Buddy";
-
-
-import { NavHashLink } from 'react-router-hash-link';
-
 
 import './App.css';
 
@@ -39,10 +31,8 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
               <Nav className="ms-auto">
-                <NavHashLink className="nav-hover" activeClassName="active" exact to={'/work/#case-studies'}>design</NavHashLink>
-                <NavHashLink className="nav-hover" activeClassName="active" exact to={'/work/#code'}>code</NavHashLink>
-                {/* <NavLink className="nav-hover" activeClassName="active" exact to={process.env.PUBLIC_URL + '/'}>work</NavLink> */}
-                {/* <NavLink activeClassName="active" exact to={process.env.PUBLIC_URL + '/playground'}>playground</NavLink> */}
+                <NavHashLink className="nav-hover" activeClassName="active" exact smooth to={'/work/#case-studies'}>design</NavHashLink>
+                <NavHashLink className="nav-hover" activeClassName="active" exact smooth to={'/work/#code'}>code</NavHashLink>
                 <NavLink className="nav-hover" activeClassName="active" exact to={process.env.PUBLIC_URL + '/about'}>about</NavLink>
                 <a className="nav-hover" href="https://drive.google.com/file/d/1vZGzG0Hdyr7Z24i5_dQl6Nw7VUx77gom/view" target="_blank" rel="noopener noreferrer">resume</a>
               </Nav>
@@ -55,8 +45,6 @@ function App() {
           <Route exact path="/" component={Work}></Route>
           <Route exact path="/work" component={Work}></Route>
           <Route exact path="/about" component={About}></Route>
-          <Route exact path="/playground" component={Playground}></Route>
-          <Route exact path="/playground/digital-media" component={DigitalMedia}></Route>
           <Route exact path="/work/nexus-builders" component={NexusBuilders}></Route>
           <Route exact path="/work/buddy" component={Buddy}></Route>
         </Switch>

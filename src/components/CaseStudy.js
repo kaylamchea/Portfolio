@@ -8,8 +8,10 @@ function CaseStudy({ name, category, time, desc, url, img, alt }) {
     return (
         <div className="case-study">
             <a href={process.env.PUBLIC_URL + "/work/buddy"}><img src={buddy}></img></a>
-            <a href={process.env.PUBLIC_URL + "/work/buddy"}><h1 className="case-title mt-3">buddy ↗︎</h1></a>
-            <p><strong>ux research and design -</strong> gamifying habit building to improve the well-being of college students</p>
+            <h1 className="case-title mt-4">
+                <a href={process.env.PUBLIC_URL + "/work/buddy"}>buddy</a> ↗︎
+            </h1>
+            <p className="mt-4"><strong>ux research and design —</strong> gamifying habit building to improve the well-being of college students</p>
         </div>
     );
 }
