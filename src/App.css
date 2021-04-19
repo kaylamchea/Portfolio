@@ -28,6 +28,10 @@ a.highlight {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
 }

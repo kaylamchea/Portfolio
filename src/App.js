@@ -5,7 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Headroom from "react-headroom";
 import ScrollUpButton from "react-scroll-up-button";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import Footer from './components/Footer';
 import ScrollToTop from "./hooks/ScrollToTop";
@@ -37,7 +38,7 @@ function App() {
             <Navbar.Brand href={process.env.PUBLIC_URL + "/"}>kayla chea.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
-              <Nav className="ml-auto">
+              <Nav className="ms-auto">
                 <NavHashLink className="nav-hover" activeClassName="active" exact to={'/work/#case-studies'}>design</NavHashLink>
                 <NavHashLink className="nav-hover" activeClassName="active" exact to={'/work/#code'}>code</NavHashLink>
                 {/* <NavLink className="nav-hover" activeClassName="active" exact to={process.env.PUBLIC_URL + '/'}>work</NavLink> */}
