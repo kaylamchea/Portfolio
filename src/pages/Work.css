@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&Source+Code+Pro:wght@600&display=swap');
 
-
 .intro .code-font {
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
@@ -17,15 +16,10 @@
     /* font-style: italic; */
 }
 
-#case-studies h1, #code h1 {
+.work-title {
     font-size: 18px;
     margin-bottom: 2rem;
     font-weight: 800;
-}
-
-/* Case Studies */
-.case-study img {
-    width: 100%;
 }
 
 .landing-page {
@@ -133,13 +127,4 @@
 
 .AnyClassForTransition {
     right: 20px;
-}
-
-.case-study {
-    padding-bottom: 8rem;
-}
-
-.code-container {
-    /* display: flex;
-    justify-content: space-between; */
 }

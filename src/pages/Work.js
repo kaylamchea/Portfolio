@@ -49,35 +49,28 @@ function Work() {
             </div>
 
 
-            <div id="case-studies" data-aos="fade-up" data-aos-duration="1500">
-                {/* <h1>case studies ↓</h1> */}
-                <h1>view case studies ↓</h1>
-                <div>
-                    <div className="case-study">
-                        <a href={process.env.PUBLIC_URL + "/work/buddy"}><img src={buddy}></img></a>
-                        <a href={process.env.PUBLIC_URL + "/work/buddy"}><h1>buddy ↗︎</h1></a>
-                        <p>ux research and design - gamifying habit building to improve the well-being of college students</p>
-                    </div>
-                </div>
+            <div id="case-studies" className="mb-5" data-aos="fade-up" data-aos-duration="1500">
+                <h1 className="work-title">view case studies ↓</h1>
+                <CaseStudy></CaseStudy>
             </div>
 
             <div id="code" data-aos="fade-up" data-aos-duration="1500">
-                <h1>view coding projects ↓</h1>
+                <h1 className="work-title">view coding projects ↓</h1>
                 <div className="container px-0">
-                    <div className="row">
-                        <div className="col-sm ps-0">
-                            <CodingProject image={code1} title="Gogo Recycling" desc="A sustainability platform that educates users about recycling through a guide and community board." tags={["React", "Firebase", "King County Dataset"]} github="https://github.com/uw-info442c-au20/gogo-recycling" website="https://gogo-recycling.web.app/"></CodingProject>
+                    <div className="row mb-2">
+                        <div className="col-sm ps-0 me-1">
+                            <CodingProject image={code1} alt="Recycling website" title="Gogo Recycling" desc="A sustainability platform that educates users about recycling through a guide and community board." tags={["React", "Firebase", "King County Dataset"]} github="https://github.com/uw-info442c-au20/gogo-recycling" website="https://gogo-recycling.web.app/"></CodingProject>
                         </div>
-                        <div className="col-sm pe-0">
-                            <CodingProject image={code2} title="Restaurant Picker" desc="A web application that chooses where to eat for you based on your preferences." tags={["React", "Firebase", "Yelp API"]} github="https://github.com/kaylamchea/project-kaylamchea" website="https://kaylamchea.github.io/project-kaylamchea/"></CodingProject>
+                        <div className="col-sm pe-0 ms-1">
+                            <CodingProject image={code2} alt="Restaurant picker website" title="Restaurant Picker" desc="A web application that chooses where to eat for you based on your preferences." tags={["React", "Firebase", "Yelp API"]} github="https://github.com/kaylamchea/project-kaylamchea" website="https://kaylamchea.github.io/project-kaylamchea/"></CodingProject>
                         </div>
                     </div>
                     <div className="row pt-4">
-                        <div className="col-sm ps-0">
-                            <CodingProject image={code3} title="buddy" desc="A well-being platform that helps users build healthy habits through gamification. Currently a work-in-progress." tags={["React", "Firebase"]} github="https://github.com/ashshah1/buddy" website="https://buddy-7d855.web.app/landing"></CodingProject>
+                        <div className="col-sm ps-0 me-1">
+                            <CodingProject image={code3} alt="Onboarding page of well-being website" title="buddy" desc="A well-being platform that helps users build healthy habits through gamification. Currently a work-in-progress." tags={["React", "Firebase"]} github="https://github.com/ashshah1/buddy" website="https://buddy-7d855.web.app/landing"></CodingProject>
                         </div>
-                        <div className="col-sm pe-0">
-                            <CodingProject image={code4} title="My Portfolio" desc="A website displaying a curated collection of my past design and coding work." tags={["React", "Firebase"]} github="https://github.com/kaylamchea/Portfolio" website="https://kaylachea.com/"></CodingProject>
+                        <div className="col-sm pe-0 ms-1">
+                            <CodingProject image={code4} alt="My portfolio website" title="My Portfolio" desc="A website displaying a curated collection of my past design and coding work." tags={["React", "Firebase"]} github="https://github.com/kaylamchea/Portfolio" website="https://kaylachea.com/"></CodingProject>
                         </div>
                     </div>
                 </div>
